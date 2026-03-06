@@ -1,0 +1,1946 @@
+{
+  "meta": {
+    "generatedAt": "2026-02-14T18:00:00Z",
+    "timezone": "Europe/London",
+    "version": "1.0",
+    "notes": "Demo dataset for seeding a student productivity assistant (tasks, mood, sessions, prefs, chat history)."
+  },
+  "userProfiles": [
+    {
+      "userId": "demo-user-1",
+      "displayName": "Demo User One",
+      "timezone": "Europe/London",
+      "university": "Brunel University London",
+      "studyLevel": "Final year",
+      "modules": [
+        {
+          "code": "CS3003",
+          "name": "Final Year Project",
+          "assessment": "App + report + presentation"
+        },
+        {
+          "code": "CS2004",
+          "name": "Algorithms and Data Structures",
+          "assessment": "Exam + coursework"
+        },
+        {
+          "code": "CS2XXX",
+          "name": "Databases",
+          "assessment": "Coursework"
+        }
+      ],
+      "preferences": {
+        "focusBlockMinutes": 50,
+        "breakMinutes": 10,
+        "maxDeepWorkBlocksPerDay": 6,
+        "preferredStudyWindows": [
+          {
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "start": "15:00",
+            "end": "18:00"
+          },
+          {
+            "start": "20:00",
+            "end": "22:30"
+          }
+        ],
+        "sleepWindow": {
+          "start": "00:30",
+          "end": "08:00"
+        },
+        "deadlineBufferHours": 6,
+        "notificationStyle": "gentle"
+      },
+      "constraints": {
+        "partTimeWork": [
+          {
+            "day": "Mon",
+            "start": "16:00",
+            "end": "21:00"
+          },
+          {
+            "day": "Thu",
+            "start": "16:00",
+            "end": "21:00"
+          }
+        ],
+        "gymDays": [
+          "Tue",
+          "Fri",
+          "Sun"
+        ],
+        "commuteMinutes": 35
+      },
+      "personalNotes": [
+        "Tends to overestimate what fits into one evening; prefers 2–3 core tasks/day.",
+        "Responds well to 'start with 2 minutes' prompts when stuck.",
+        "Best focus late morning; avoid heavy work after 22:30."
+      ],
+      "createdAt": "2025-11-16T18:00:00Z",
+      "updatedAt": "2026-02-13T18:00:00Z"
+    },
+    {
+      "userId": "demo-user-2",
+      "displayName": "Ayesha",
+      "timezone": "Europe/London",
+      "university": "Brunel University London",
+      "studyLevel": "2nd year",
+      "modules": [
+        {
+          "code": "CS3003",
+          "name": "Final Year Project",
+          "assessment": "App + report + presentation"
+        },
+        {
+          "code": "CS2004",
+          "name": "Algorithms and Data Structures",
+          "assessment": "Exam + coursework"
+        },
+        {
+          "code": "CS2XXX",
+          "name": "Databases",
+          "assessment": "Coursework"
+        }
+      ],
+      "preferences": {
+        "focusBlockMinutes": 25,
+        "breakMinutes": 5,
+        "maxDeepWorkBlocksPerDay": 6,
+        "preferredStudyWindows": [
+          {
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "start": "15:00",
+            "end": "18:00"
+          },
+          {
+            "start": "20:00",
+            "end": "22:30"
+          }
+        ],
+        "sleepWindow": {
+          "start": "00:30",
+          "end": "08:00"
+        },
+        "deadlineBufferHours": 6,
+        "notificationStyle": "gentle"
+      },
+      "constraints": {
+        "partTimeWork": [
+          {
+            "day": "Mon",
+            "start": "16:00",
+            "end": "21:00"
+          },
+          {
+            "day": "Thu",
+            "start": "16:00",
+            "end": "21:00"
+          }
+        ],
+        "gymDays": [
+          "Tue",
+          "Fri",
+          "Sun"
+        ],
+        "commuteMinutes": 35
+      },
+      "personalNotes": [
+        "Tends to overestimate what fits into one evening; prefers 2–3 core tasks/day.",
+        "Responds well to 'start with 2 minutes' prompts when stuck.",
+        "Best focus late morning; avoid heavy work after 22:30."
+      ],
+      "createdAt": "2025-11-16T18:00:00Z",
+      "updatedAt": "2026-02-13T18:00:00Z"
+    },
+    {
+      "userId": "demo-user-3",
+      "displayName": "Omar",
+      "timezone": "Europe/London",
+      "university": "Brunel University London",
+      "studyLevel": "1st year",
+      "modules": [
+        {
+          "code": "CS3003",
+          "name": "Final Year Project",
+          "assessment": "App + report + presentation"
+        },
+        {
+          "code": "CS2004",
+          "name": "Algorithms and Data Structures",
+          "assessment": "Exam + coursework"
+        },
+        {
+          "code": "CS2XXX",
+          "name": "Databases",
+          "assessment": "Coursework"
+        }
+      ],
+      "preferences": {
+        "focusBlockMinutes": 50,
+        "breakMinutes": 10,
+        "maxDeepWorkBlocksPerDay": 6,
+        "preferredStudyWindows": [
+          {
+            "start": "10:00",
+            "end": "13:00"
+          },
+          {
+            "start": "15:00",
+            "end": "18:00"
+          },
+          {
+            "start": "20:00",
+            "end": "22:30"
+          }
+        ],
+        "sleepWindow": {
+          "start": "00:30",
+          "end": "08:00"
+        },
+        "deadlineBufferHours": 6,
+        "notificationStyle": "gentle"
+      },
+      "constraints": {
+        "partTimeWork": [
+          {
+            "day": "Mon",
+            "start": "16:00",
+            "end": "21:00"
+          },
+          {
+            "day": "Thu",
+            "start": "16:00",
+            "end": "21:00"
+          }
+        ],
+        "gymDays": [
+          "Tue",
+          "Fri",
+          "Sun"
+        ],
+        "commuteMinutes": 35
+      },
+      "personalNotes": [
+        "Tends to overestimate what fits into one evening; prefers 2–3 core tasks/day.",
+        "Responds well to 'start with 2 minutes' prompts when stuck.",
+        "Best focus late morning; avoid heavy work after 22:30."
+      ],
+      "createdAt": "2025-11-16T18:00:00Z",
+      "updatedAt": "2026-02-13T18:00:00Z"
+    }
+  ],
+  "tasks": [
+    {
+      "_id": "1026706d7e805da846a32c3b",
+      "userId": "demo-user-1",
+      "title": "Subnetting practice",
+      "subject": "Networks",
+      "priority": "medium",
+      "deadline": "2026-02-28T16:00:00Z",
+      "estMinutes": 25,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-10T12:00:00Z",
+      "updatedAt": "2026-02-14T14:00:00Z"
+    },
+    {
+      "_id": "9b62179273c8eb5bb682575e",
+      "userId": "demo-user-1",
+      "title": "Past paper Q1–Q5",
+      "subject": "Maths",
+      "priority": "medium",
+      "deadline": "2026-02-24T14:00:00Z",
+      "estMinutes": 50,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-06T18:00:00Z",
+      "updatedAt": "2026-02-12T15:00:00Z"
+    },
+    {
+      "_id": "826a6fce48478dcb74f21345",
+      "userId": "demo-user-1",
+      "title": "Revise linear algebra",
+      "subject": "Maths",
+      "priority": "medium",
+      "deadline": "2026-02-16T18:00:00Z",
+      "estMinutes": 90,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-28T14:00:00Z",
+      "updatedAt": "2026-02-10T18:00:00Z"
+    },
+    {
+      "_id": "38a39d5e0853964b50af03b9",
+      "userId": "demo-user-1",
+      "title": "Read 2 papers and summarize",
+      "subject": "AI & ML",
+      "priority": "low",
+      "deadline": "2026-02-07T20:00:00Z",
+      "estMinutes": 30,
+      "completed": true,
+      "completedAt": "2026-02-07T19:00:00Z",
+      "createdAt": "2026-02-09T08:00:00Z",
+      "updatedAt": "2026-02-11T14:00:00Z"
+    },
+    {
+      "_id": "58d669cbee3772a077021721",
+      "userId": "demo-user-1",
+      "title": "Wireshark lab write-up",
+      "subject": "Networks",
+      "priority": "low",
+      "deadline": "2026-02-14T20:00:00Z",
+      "estMinutes": 50,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-07T10:00:00Z",
+      "updatedAt": "2026-02-13T13:00:00Z"
+    },
+    {
+      "_id": "f7fd633dbdde131ca3766e4d",
+      "userId": "demo-user-1",
+      "title": "MongoDB aggregation practice",
+      "subject": "Databases",
+      "priority": "medium",
+      "deadline": "2026-03-16T09:00:00Z",
+      "estMinutes": 50,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-27T17:00:00Z",
+      "updatedAt": "2026-02-14T13:00:00Z"
+    },
+    {
+      "_id": "0275dff6c15c0c8e9df46961",
+      "userId": "demo-user-1",
+      "title": "Draft methodology section",
+      "subject": "FYP",
+      "priority": "high",
+      "deadline": "2026-02-04T18:00:00Z",
+      "estMinutes": 25,
+      "completed": true,
+      "completedAt": "2026-02-04T16:00:00Z",
+      "createdAt": "2026-01-28T17:00:00Z",
+      "updatedAt": "2026-02-13T18:00:00Z"
+    },
+    {
+      "_id": "27c3712da86a78c49ea20e32",
+      "userId": "demo-user-1",
+      "title": "Read 2 papers and summarize",
+      "subject": "AI & ML",
+      "priority": "medium",
+      "deadline": "2026-02-15T09:00:00Z",
+      "estMinutes": 45,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-02T14:00:00Z",
+      "updatedAt": "2026-02-13T15:00:00Z"
+    },
+    {
+      "_id": "909348334896a68f812d810a",
+      "userId": "demo-user-1",
+      "title": "MongoDB aggregation practice",
+      "subject": "Databases",
+      "priority": "medium",
+      "deadline": "2026-02-11T20:00:00Z",
+      "estMinutes": 60,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-27T12:00:00Z",
+      "updatedAt": "2026-02-10T18:00:00Z"
+    },
+    {
+      "_id": "3241b4d419b1b673bd4755d0",
+      "userId": "demo-user-1",
+      "title": "Indexing notes + queries",
+      "subject": "Databases",
+      "priority": "high",
+      "deadline": "2026-03-07T16:00:00Z",
+      "estMinutes": 75,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-05T16:00:00Z",
+      "updatedAt": "2026-02-09T18:00:00Z"
+    },
+    {
+      "_id": "c1f76eb97706ca828bca0385",
+      "userId": "demo-user-1",
+      "title": "Update UML diagrams",
+      "subject": "Software Engineering",
+      "priority": "low",
+      "deadline": "2026-02-15T20:00:00Z",
+      "estMinutes": 90,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-31T09:00:00Z",
+      "updatedAt": "2026-02-10T18:00:00Z"
+    },
+    {
+      "_id": "c681d06bd2aa399dac946dc5",
+      "userId": "demo-user-1",
+      "title": "Refactor backend routes",
+      "subject": "Software Engineering",
+      "priority": "medium",
+      "deadline": "2026-02-14T14:00:00Z",
+      "estMinutes": 25,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-31T09:00:00Z",
+      "updatedAt": "2026-02-10T13:00:00Z"
+    },
+    {
+      "_id": "aeee6f529a279764017f2ed6",
+      "userId": "demo-user-1",
+      "title": "Probability exercises",
+      "subject": "Maths",
+      "priority": "medium",
+      "deadline": "2026-02-11T20:00:00Z",
+      "estMinutes": 50,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-13T17:00:00Z",
+      "updatedAt": "2026-02-11T17:00:00Z"
+    },
+    {
+      "_id": "5e173e4eaede5fe878f78e29",
+      "userId": "demo-user-1",
+      "title": "Read 2 papers and summarize",
+      "subject": "AI & ML",
+      "priority": "medium",
+      "deadline": "2026-02-19T09:00:00Z",
+      "estMinutes": 75,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-09T15:00:00Z",
+      "updatedAt": "2026-02-11T13:00:00Z"
+    },
+    {
+      "_id": "462ddaed16dc0cf0b9cd7f78",
+      "userId": "demo-user-1",
+      "title": "Probability exercises",
+      "subject": "Maths",
+      "priority": "medium",
+      "deadline": "2026-02-15T20:00:00Z",
+      "estMinutes": 90,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-01T16:00:00Z",
+      "updatedAt": "2026-02-11T17:00:00Z"
+    },
+    {
+      "_id": "0c02d4e518ca6eaac8d82f01",
+      "userId": "demo-user-1",
+      "title": "Revise TCP/IP layers",
+      "subject": "Networks",
+      "priority": "medium",
+      "deadline": "2026-03-07T20:00:00Z",
+      "estMinutes": 30,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-20T18:00:00Z",
+      "updatedAt": "2026-02-13T17:00:00Z"
+    },
+    {
+      "_id": "31645ae36f2e1e4de1e90c80",
+      "userId": "demo-user-2",
+      "title": "Tune classification model",
+      "subject": "AI & ML",
+      "priority": "medium",
+      "deadline": "2026-02-16T14:00:00Z",
+      "estMinutes": 25,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-27T18:00:00Z",
+      "updatedAt": "2026-02-14T15:00:00Z"
+    },
+    {
+      "_id": "19d54dbcecc24b35c47009ed",
+      "userId": "demo-user-2",
+      "title": "Past paper Q1–Q5",
+      "subject": "Maths",
+      "priority": "high",
+      "deadline": "2026-02-17T14:00:00Z",
+      "estMinutes": 50,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-05T15:00:00Z",
+      "updatedAt": "2026-02-09T18:00:00Z"
+    },
+    {
+      "_id": "1d076231e171ce761497aa79",
+      "userId": "demo-user-2",
+      "title": "ER diagram final check",
+      "subject": "Databases",
+      "priority": "high",
+      "deadline": "2026-02-16T14:00:00Z",
+      "estMinutes": 50,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-12T10:00:00Z",
+      "updatedAt": "2026-02-10T13:00:00Z"
+    },
+    {
+      "_id": "5df1bcadd49c5f7794e1dd4c",
+      "userId": "demo-user-2",
+      "title": "Implement embeddings prototype",
+      "subject": "AI & ML",
+      "priority": "medium",
+      "deadline": "2026-02-24T09:00:00Z",
+      "estMinutes": 75,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-02T17:00:00Z",
+      "updatedAt": "2026-02-10T13:00:00Z"
+    },
+    {
+      "_id": "618c1266f6a90663f76c7a9c",
+      "userId": "demo-user-2",
+      "title": "Plan week overview",
+      "subject": "",
+      "priority": "medium",
+      "deadline": "2026-02-14T14:00:00Z",
+      "estMinutes": 75,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-28T11:00:00Z",
+      "updatedAt": "2026-02-11T18:00:00Z"
+    },
+    {
+      "_id": "fa6bad17408d946a7c7fa8ff",
+      "userId": "demo-user-2",
+      "title": "Clean up GitHub repo README",
+      "subject": "",
+      "priority": "low",
+      "deadline": "2026-02-11T11:00:00Z",
+      "estMinutes": 75,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-08T10:00:00Z",
+      "updatedAt": "2026-02-09T18:00:00Z"
+    },
+    {
+      "_id": "1210d472406eb1ff00d00890",
+      "userId": "demo-user-2",
+      "title": "Past paper Q1–Q5",
+      "subject": "Maths",
+      "priority": "high",
+      "deadline": "2026-02-07T09:00:00Z",
+      "estMinutes": 45,
+      "completed": true,
+      "completedAt": "2026-02-07T07:00:00Z",
+      "createdAt": "2026-01-25T10:00:00Z",
+      "updatedAt": "2026-02-12T16:00:00Z"
+    },
+    {
+      "_id": "8c2bce779212cccf1052fda3",
+      "userId": "demo-user-2",
+      "title": "Draft methodology section",
+      "subject": "FYP",
+      "priority": "medium",
+      "deadline": "2026-02-14T09:00:00Z",
+      "estMinutes": 120,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-23T14:00:00Z",
+      "updatedAt": "2026-02-10T14:00:00Z"
+    },
+    {
+      "_id": "15a064c2957cac42b13d72ac",
+      "userId": "demo-user-2",
+      "title": "Wireshark lab write-up",
+      "subject": "Networks",
+      "priority": "low",
+      "deadline": "2026-03-07T16:00:00Z",
+      "estMinutes": 60,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-06T13:00:00Z",
+      "updatedAt": "2026-02-10T15:00:00Z"
+    },
+    {
+      "_id": "d5c2972284c4cab3209eb834",
+      "userId": "demo-user-2",
+      "title": "Write up complexity notes",
+      "subject": "Algorithms",
+      "priority": "low",
+      "deadline": "2026-02-19T18:00:00Z",
+      "estMinutes": 120,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-10T18:00:00Z",
+      "updatedAt": "2026-02-14T16:00:00Z"
+    },
+    {
+      "_id": "2ac09dc275c54898f425d8d9",
+      "userId": "demo-user-2",
+      "title": "Clean up GitHub repo README",
+      "subject": "",
+      "priority": "high",
+      "deadline": "2026-02-14T11:00:00Z",
+      "estMinutes": 75,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-25T09:00:00Z",
+      "updatedAt": "2026-02-13T15:00:00Z"
+    },
+    {
+      "_id": "3490cacaead49a6fa5ca9f7a",
+      "userId": "demo-user-2",
+      "title": "Probability exercises",
+      "subject": "Maths",
+      "priority": "medium",
+      "deadline": "2026-02-15T09:00:00Z",
+      "estMinutes": 90,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-07T09:00:00Z",
+      "updatedAt": "2026-02-10T17:00:00Z"
+    },
+    {
+      "_id": "7898dcbe86e9c30b993f2a8a",
+      "userId": "demo-user-3",
+      "title": "Refactor backend routes",
+      "subject": "Software Engineering",
+      "priority": "medium",
+      "deadline": "2026-02-13T11:00:00Z",
+      "estMinutes": 60,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-12T09:00:00Z",
+      "updatedAt": "2026-02-11T13:00:00Z"
+    },
+    {
+      "_id": "a40f98dcc16a7fb95593f485",
+      "userId": "demo-user-3",
+      "title": "Subnetting practice",
+      "subject": "Networks",
+      "priority": "medium",
+      "deadline": "2026-02-15T11:00:00Z",
+      "estMinutes": 50,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-04T12:00:00Z",
+      "updatedAt": "2026-02-12T16:00:00Z"
+    },
+    {
+      "_id": "89e3f12f63c9d1446ade4a52",
+      "userId": "demo-user-3",
+      "title": "Email supervisor update",
+      "subject": "",
+      "priority": "medium",
+      "deadline": "2026-02-15T20:00:00Z",
+      "estMinutes": 45,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-13T11:00:00Z",
+      "updatedAt": "2026-02-12T17:00:00Z"
+    },
+    {
+      "_id": "55f24ddcdfc016b0a60077b9",
+      "userId": "demo-user-3",
+      "title": "Normalize schema for coursework",
+      "subject": "Databases",
+      "priority": "low",
+      "deadline": "2026-02-11T09:00:00Z",
+      "estMinutes": 60,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-04T14:00:00Z",
+      "updatedAt": "2026-02-11T13:00:00Z"
+    },
+    {
+      "_id": "ad4afb65c07746053b1c8113",
+      "userId": "demo-user-3",
+      "title": "Prepare ethics form",
+      "subject": "FYP",
+      "priority": "low",
+      "deadline": "2026-02-16T16:00:00Z",
+      "estMinutes": 30,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-10T10:00:00Z",
+      "updatedAt": "2026-02-12T15:00:00Z"
+    },
+    {
+      "_id": "4609d384d33933f6686bd951",
+      "userId": "demo-user-3",
+      "title": "Email supervisor update",
+      "subject": "",
+      "priority": "high",
+      "deadline": "2026-02-15T11:00:00Z",
+      "estMinutes": 120,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-13T08:00:00Z",
+      "updatedAt": "2026-02-14T18:00:00Z"
+    },
+    {
+      "_id": "f422387e98e13519bad33104",
+      "userId": "demo-user-3",
+      "title": "Normalize schema for coursework",
+      "subject": "Databases",
+      "priority": "medium",
+      "deadline": "2026-02-21T14:00:00Z",
+      "estMinutes": 120,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-02T13:00:00Z",
+      "updatedAt": "2026-02-13T18:00:00Z"
+    },
+    {
+      "_id": "cce8cfd534153dfe5cb04ff3",
+      "userId": "demo-user-3",
+      "title": "Revise linear algebra",
+      "subject": "Maths",
+      "priority": "medium",
+      "deadline": "2026-02-14T20:00:00Z",
+      "estMinutes": 30,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-02-13T08:00:00Z",
+      "updatedAt": "2026-02-10T13:00:00Z"
+    },
+    {
+      "_id": "7a3d7fbc4105ff52fa7a817c",
+      "userId": "demo-user-3",
+      "title": "Probability exercises",
+      "subject": "Maths",
+      "priority": "high",
+      "deadline": "2026-02-17T16:00:00Z",
+      "estMinutes": 30,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-30T17:00:00Z",
+      "updatedAt": "2026-02-11T15:00:00Z"
+    },
+    {
+      "_id": "a3f03cd10296eab17eafbe33",
+      "userId": "demo-user-3",
+      "title": "Prepare lab report",
+      "subject": "AI & ML",
+      "priority": "low",
+      "deadline": "2026-03-16T20:00:00Z",
+      "estMinutes": 75,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-27T10:00:00Z",
+      "updatedAt": "2026-02-12T13:00:00Z"
+    },
+    {
+      "_id": "315f4d38663c6e6a3d13ee4f",
+      "userId": "demo-user-3",
+      "title": "Fix API integration bugs",
+      "subject": "FYP",
+      "priority": "medium",
+      "deadline": "2026-02-19T16:00:00Z",
+      "estMinutes": 25,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-29T10:00:00Z",
+      "updatedAt": "2026-02-13T13:00:00Z"
+    },
+    {
+      "_id": "543cacd78ca9e44d9a6669b4",
+      "userId": "demo-user-3",
+      "title": "ER diagram final check",
+      "subject": "Databases",
+      "priority": "medium",
+      "deadline": "2026-02-28T09:00:00Z",
+      "estMinutes": 75,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "2026-01-27T11:00:00Z",
+      "updatedAt": "2026-02-10T14:00:00Z"
+    }
+  ],
+  "moodEntries": [
+    {
+      "_id": "6e8b5359309cc6273931bdb2",
+      "userId": "demo-user-1",
+      "mood": 4,
+      "stress": 3,
+      "energy": 3,
+      "note": "Slept late; low focus.",
+      "createdAt": "2026-01-31T18:00:00Z",
+      "updatedAt": "2026-01-31T18:00:00Z"
+    },
+    {
+      "_id": "be4d58fed8a728e7eca0fa5f",
+      "userId": "demo-user-1",
+      "mood": 1,
+      "stress": 3,
+      "energy": 3,
+      "note": "Distracted by phone.",
+      "createdAt": "2026-02-01T14:00:00Z",
+      "updatedAt": "2026-02-01T14:00:00Z"
+    },
+    {
+      "_id": "0627df7ffe0297c79bfbdabe",
+      "userId": "demo-user-1",
+      "mood": 3,
+      "stress": 3,
+      "energy": 3,
+      "note": "Deadline anxiety.",
+      "createdAt": "2026-02-02T16:00:00Z",
+      "updatedAt": "2026-02-02T16:00:00Z"
+    },
+    {
+      "_id": "3566f893697b590481194f30",
+      "userId": "demo-user-1",
+      "mood": 3,
+      "stress": 3,
+      "energy": 4,
+      "note": "Productive morning.",
+      "createdAt": "2026-02-03T14:00:00Z",
+      "updatedAt": "2026-02-03T14:00:00Z"
+    },
+    {
+      "_id": "8f32cf21449273d7cee9d913",
+      "userId": "demo-user-1",
+      "mood": 3,
+      "stress": 3,
+      "energy": 2,
+      "note": "",
+      "createdAt": "2026-02-04T14:00:00Z",
+      "updatedAt": "2026-02-04T14:00:00Z"
+    },
+    {
+      "_id": "5250def91799e2786d374842",
+      "userId": "demo-user-1",
+      "mood": 4,
+      "stress": 3,
+      "energy": 2,
+      "note": "Lots of lectures today.",
+      "createdAt": "2026-02-05T16:00:00Z",
+      "updatedAt": "2026-02-05T16:00:00Z"
+    },
+    {
+      "_id": "e3e9c8fe21da80270815fe85",
+      "userId": "demo-user-1",
+      "mood": 2,
+      "stress": 3,
+      "energy": 4,
+      "note": "Deadline anxiety.",
+      "createdAt": "2026-02-06T18:00:00Z",
+      "updatedAt": "2026-02-06T18:00:00Z"
+    },
+    {
+      "_id": "daa35adf9c1e2a8a3c0ed16b",
+      "userId": "demo-user-1",
+      "mood": 4,
+      "stress": 3,
+      "energy": 2,
+      "note": "Productive morning.",
+      "createdAt": "2026-02-07T12:00:00Z",
+      "updatedAt": "2026-02-07T12:00:00Z"
+    },
+    {
+      "_id": "9ef307590d273e34f98dff7e",
+      "userId": "demo-user-1",
+      "mood": 4,
+      "stress": 4,
+      "energy": 2,
+      "note": "Felt good after gym.",
+      "createdAt": "2026-02-08T12:00:00Z",
+      "updatedAt": "2026-02-08T12:00:00Z"
+    },
+    {
+      "_id": "28da8099f4efbacea67c7d1a",
+      "userId": "demo-user-1",
+      "mood": 3,
+      "stress": 5,
+      "energy": 3,
+      "note": "Felt good after gym.",
+      "createdAt": "2026-02-09T16:00:00Z",
+      "updatedAt": "2026-02-09T16:00:00Z"
+    },
+    {
+      "_id": "f14a3e3e04d42f8ac2acaf12",
+      "userId": "demo-user-1",
+      "mood": 4,
+      "stress": 5,
+      "energy": 3,
+      "note": "Felt good after gym.",
+      "createdAt": "2026-02-10T12:00:00Z",
+      "updatedAt": "2026-02-10T12:00:00Z"
+    },
+    {
+      "_id": "d33e5901a19bbd47d5552c7f",
+      "userId": "demo-user-1",
+      "mood": 4,
+      "stress": 5,
+      "energy": 5,
+      "note": "Slept late; low focus.",
+      "createdAt": "2026-02-11T16:00:00Z",
+      "updatedAt": "2026-02-11T16:00:00Z"
+    },
+    {
+      "_id": "e952eb9d8e96cf37cb990c80",
+      "userId": "demo-user-1",
+      "mood": 3,
+      "stress": 4,
+      "energy": 3,
+      "note": "",
+      "createdAt": "2026-02-12T16:00:00Z",
+      "updatedAt": "2026-02-12T16:00:00Z"
+    },
+    {
+      "_id": "7b7684319e1b429ad564b858",
+      "userId": "demo-user-1",
+      "mood": 5,
+      "stress": 4,
+      "energy": 4,
+      "note": "Deadline anxiety.",
+      "createdAt": "2026-02-13T18:00:00Z",
+      "updatedAt": "2026-02-13T18:00:00Z"
+    },
+    {
+      "_id": "92df49784dc2efcd1b237b51",
+      "userId": "demo-user-2",
+      "mood": 5,
+      "stress": 3,
+      "energy": 4,
+      "note": "Good momentum.",
+      "createdAt": "2026-02-04T18:00:00Z",
+      "updatedAt": "2026-02-04T18:00:00Z"
+    },
+    {
+      "_id": "03877ebce4b0f39d234b9ae6",
+      "userId": "demo-user-2",
+      "mood": 5,
+      "stress": 3,
+      "energy": 4,
+      "note": "Slept late; low focus.",
+      "createdAt": "2026-02-05T12:00:00Z",
+      "updatedAt": "2026-02-05T12:00:00Z"
+    },
+    {
+      "_id": "a29130a35755ade7c55dc06e",
+      "userId": "demo-user-2",
+      "mood": 3,
+      "stress": 2,
+      "energy": 4,
+      "note": "Good momentum.",
+      "createdAt": "2026-02-06T12:00:00Z",
+      "updatedAt": "2026-02-06T12:00:00Z"
+    },
+    {
+      "_id": "35ba6e38facc3bbe5924a379",
+      "userId": "demo-user-2",
+      "mood": 3,
+      "stress": 4,
+      "energy": 2,
+      "note": "Slept late; low focus.",
+      "createdAt": "2026-02-07T12:00:00Z",
+      "updatedAt": "2026-02-07T12:00:00Z"
+    },
+    {
+      "_id": "4cd5f55f945ae1b0f46cfdfd",
+      "userId": "demo-user-2",
+      "mood": 2,
+      "stress": 4,
+      "energy": 3,
+      "note": "Distracted by phone.",
+      "createdAt": "2026-02-08T18:00:00Z",
+      "updatedAt": "2026-02-08T18:00:00Z"
+    },
+    {
+      "_id": "918795ef338b1e6d3791e8b2",
+      "userId": "demo-user-2",
+      "mood": 3,
+      "stress": 2,
+      "energy": 1,
+      "note": "Lots of lectures today.",
+      "createdAt": "2026-02-09T12:00:00Z",
+      "updatedAt": "2026-02-09T12:00:00Z"
+    },
+    {
+      "_id": "bd54661b85a99834d184474a",
+      "userId": "demo-user-2",
+      "mood": 5,
+      "stress": 2,
+      "energy": 4,
+      "note": "Lots of lectures today.",
+      "createdAt": "2026-02-10T12:00:00Z",
+      "updatedAt": "2026-02-10T12:00:00Z"
+    },
+    {
+      "_id": "dce22c8befa02eb2c6d6f8a9",
+      "userId": "demo-user-2",
+      "mood": 4,
+      "stress": 4,
+      "energy": 3,
+      "note": "Deadline anxiety.",
+      "createdAt": "2026-02-11T16:00:00Z",
+      "updatedAt": "2026-02-11T16:00:00Z"
+    },
+    {
+      "_id": "113e035ee0d649582b82b51c",
+      "userId": "demo-user-2",
+      "mood": 4,
+      "stress": 2,
+      "energy": 5,
+      "note": "Productive morning.",
+      "createdAt": "2026-02-12T14:00:00Z",
+      "updatedAt": "2026-02-12T14:00:00Z"
+    },
+    {
+      "_id": "306f247e00a3d4f27c233ab9",
+      "userId": "demo-user-2",
+      "mood": 4,
+      "stress": 4,
+      "energy": 3,
+      "note": "Slept late; low focus.",
+      "createdAt": "2026-02-13T14:00:00Z",
+      "updatedAt": "2026-02-13T14:00:00Z"
+    },
+    {
+      "_id": "030c4116859841961be37c79",
+      "userId": "demo-user-3",
+      "mood": 4,
+      "stress": 5,
+      "energy": 3,
+      "note": "Distracted by phone.",
+      "createdAt": "2026-02-04T12:00:00Z",
+      "updatedAt": "2026-02-04T12:00:00Z"
+    },
+    {
+      "_id": "1086e7b669e52553c1d88458",
+      "userId": "demo-user-3",
+      "mood": 5,
+      "stress": 3,
+      "energy": 5,
+      "note": "Productive morning.",
+      "createdAt": "2026-02-05T18:00:00Z",
+      "updatedAt": "2026-02-05T18:00:00Z"
+    },
+    {
+      "_id": "a19fb2a7525dc2b76aab96f0",
+      "userId": "demo-user-3",
+      "mood": 3,
+      "stress": 4,
+      "energy": 2,
+      "note": "Felt good after gym.",
+      "createdAt": "2026-02-06T18:00:00Z",
+      "updatedAt": "2026-02-06T18:00:00Z"
+    },
+    {
+      "_id": "1ac3c890bef196a2350266d3",
+      "userId": "demo-user-3",
+      "mood": 4,
+      "stress": 3,
+      "energy": 5,
+      "note": "Lots of lectures today.",
+      "createdAt": "2026-02-07T18:00:00Z",
+      "updatedAt": "2026-02-07T18:00:00Z"
+    },
+    {
+      "_id": "240ea122158278dcecda0c30",
+      "userId": "demo-user-3",
+      "mood": 3,
+      "stress": 4,
+      "energy": 5,
+      "note": "Distracted by phone.",
+      "createdAt": "2026-02-08T16:00:00Z",
+      "updatedAt": "2026-02-08T16:00:00Z"
+    },
+    {
+      "_id": "b39929ecc0f574c949b04310",
+      "userId": "demo-user-3",
+      "mood": 4,
+      "stress": 4,
+      "energy": 4,
+      "note": "Slept late; low focus.",
+      "createdAt": "2026-02-09T18:00:00Z",
+      "updatedAt": "2026-02-09T18:00:00Z"
+    },
+    {
+      "_id": "6d455786351e292836fab473",
+      "userId": "demo-user-3",
+      "mood": 3,
+      "stress": 5,
+      "energy": 3,
+      "note": "Productive morning.",
+      "createdAt": "2026-02-10T12:00:00Z",
+      "updatedAt": "2026-02-10T12:00:00Z"
+    },
+    {
+      "_id": "a94bad50a77d8b4afeeb9f35",
+      "userId": "demo-user-3",
+      "mood": 4,
+      "stress": 5,
+      "energy": 3,
+      "note": "Good momentum.",
+      "createdAt": "2026-02-11T14:00:00Z",
+      "updatedAt": "2026-02-11T14:00:00Z"
+    },
+    {
+      "_id": "82200c618f4bc794e2cb0754",
+      "userId": "demo-user-3",
+      "mood": 4,
+      "stress": 5,
+      "energy": 2,
+      "note": "Lots of lectures today.",
+      "createdAt": "2026-02-12T18:00:00Z",
+      "updatedAt": "2026-02-12T18:00:00Z"
+    },
+    {
+      "_id": "fb17f728b716bcfe11a3885c",
+      "userId": "demo-user-3",
+      "mood": 2,
+      "stress": 4,
+      "energy": 4,
+      "note": "Felt good after gym.",
+      "createdAt": "2026-02-13T12:00:00Z",
+      "updatedAt": "2026-02-13T12:00:00Z"
+    }
+  ],
+  "studySessions": [
+    {
+      "_id": "47cb2c083eb8cb37f0a72e9d",
+      "userId": "demo-user-1",
+      "taskId": "0c02d4e518ca6eaac8d82f01",
+      "plannedMinutes": 45,
+      "actualMinutes": 44,
+      "startedAt": "2026-02-13T11:00:00Z",
+      "endedAt": "2026-02-13T11:44:00Z",
+      "completed": false,
+      "createdAt": "2026-02-13T11:00:00Z",
+      "updatedAt": "2026-02-13T11:44:00Z"
+    },
+    {
+      "_id": "9f3374cebd4d3fd81b6ee7b3",
+      "userId": "demo-user-1",
+      "taskId": "38a39d5e0853964b50af03b9",
+      "plannedMinutes": 30,
+      "actualMinutes": 20,
+      "startedAt": "2026-02-14T18:00:00Z",
+      "endedAt": "2026-02-14T18:20:00Z",
+      "completed": false,
+      "createdAt": "2026-02-14T18:00:00Z",
+      "updatedAt": "2026-02-14T18:20:00Z"
+    },
+    {
+      "_id": "601a7462667a40844853040b",
+      "userId": "demo-user-1",
+      "taskId": "c681d06bd2aa399dac946dc5",
+      "plannedMinutes": 45,
+      "actualMinutes": 52,
+      "startedAt": "2026-02-13T11:00:00Z",
+      "endedAt": "2026-02-13T11:52:00Z",
+      "completed": true,
+      "createdAt": "2026-02-13T11:00:00Z",
+      "updatedAt": "2026-02-13T11:52:00Z"
+    },
+    {
+      "_id": "4d32feb3e719e01fcd3fe22a",
+      "userId": "demo-user-1",
+      "taskId": "27c3712da86a78c49ea20e32",
+      "plannedMinutes": 45,
+      "actualMinutes": 47,
+      "startedAt": "2026-02-14T16:00:00Z",
+      "endedAt": "2026-02-14T16:47:00Z",
+      "completed": true,
+      "createdAt": "2026-02-14T16:00:00Z",
+      "updatedAt": "2026-02-14T16:47:00Z"
+    },
+    {
+      "_id": "c9ed336de7daecd3ada8b4f2",
+      "userId": "demo-user-1",
+      "taskId": "58d669cbee3772a077021721",
+      "plannedMinutes": 25,
+      "actualMinutes": 34,
+      "startedAt": "2026-02-05T10:00:00Z",
+      "endedAt": "2026-02-05T10:34:00Z",
+      "completed": false,
+      "createdAt": "2026-02-05T10:00:00Z",
+      "updatedAt": "2026-02-05T10:34:00Z"
+    },
+    {
+      "_id": "b41a3dbd199b364f73bb387d",
+      "userId": "demo-user-1",
+      "taskId": "826a6fce48478dcb74f21345",
+      "plannedMinutes": 25,
+      "actualMinutes": 34,
+      "startedAt": "2026-02-13T12:00:00Z",
+      "endedAt": "2026-02-13T12:34:00Z",
+      "completed": true,
+      "createdAt": "2026-02-13T12:00:00Z",
+      "updatedAt": "2026-02-13T12:34:00Z"
+    },
+    {
+      "_id": "0589ab054c24026cdea5b9a2",
+      "userId": "demo-user-1",
+      "taskId": null,
+      "plannedMinutes": 25,
+      "actualMinutes": 13,
+      "startedAt": "2026-02-03T14:00:00Z",
+      "endedAt": "2026-02-03T14:13:00Z",
+      "completed": false,
+      "createdAt": "2026-02-03T14:00:00Z",
+      "updatedAt": "2026-02-03T14:13:00Z"
+    },
+    {
+      "_id": "128edfed863bd39f917c1069",
+      "userId": "demo-user-1",
+      "taskId": "9b62179273c8eb5bb682575e",
+      "plannedMinutes": 30,
+      "actualMinutes": 20,
+      "startedAt": "2026-02-12T09:00:00Z",
+      "endedAt": "2026-02-12T09:20:00Z",
+      "completed": false,
+      "createdAt": "2026-02-12T09:00:00Z",
+      "updatedAt": "2026-02-12T09:20:00Z"
+    },
+    {
+      "_id": "d54c7b2c1d0e2adcd93c0a5e",
+      "userId": "demo-user-1",
+      "taskId": "0275dff6c15c0c8e9df46961",
+      "plannedMinutes": 30,
+      "actualMinutes": 30,
+      "startedAt": "2026-02-13T18:00:00Z",
+      "endedAt": "2026-02-13T18:30:00Z",
+      "completed": true,
+      "createdAt": "2026-02-13T18:00:00Z",
+      "updatedAt": "2026-02-13T18:30:00Z"
+    },
+    {
+      "_id": "7dc2c9a7a5236bb473486542",
+      "userId": "demo-user-1",
+      "taskId": "c681d06bd2aa399dac946dc5",
+      "plannedMinutes": 25,
+      "actualMinutes": 16,
+      "startedAt": "2026-02-08T17:00:00Z",
+      "endedAt": "2026-02-08T17:16:00Z",
+      "completed": false,
+      "createdAt": "2026-02-08T17:00:00Z",
+      "updatedAt": "2026-02-08T17:16:00Z"
+    },
+    {
+      "_id": "aa4e2fe981b29ee11b922ce1",
+      "userId": "demo-user-1",
+      "taskId": "f7fd633dbdde131ca3766e4d",
+      "plannedMinutes": 50,
+      "actualMinutes": 37,
+      "startedAt": "2026-02-05T11:00:00Z",
+      "endedAt": "2026-02-05T11:37:00Z",
+      "completed": false,
+      "createdAt": "2026-02-05T11:00:00Z",
+      "updatedAt": "2026-02-05T11:37:00Z"
+    },
+    {
+      "_id": "41e3a2517ee5bb9cda1a2a3c",
+      "userId": "demo-user-1",
+      "taskId": "462ddaed16dc0cf0b9cd7f78",
+      "plannedMinutes": 30,
+      "actualMinutes": 32,
+      "startedAt": "2026-02-09T09:00:00Z",
+      "endedAt": "2026-02-09T09:32:00Z",
+      "completed": true,
+      "createdAt": "2026-02-09T09:00:00Z",
+      "updatedAt": "2026-02-09T09:32:00Z"
+    },
+    {
+      "_id": "a24b9c429ca42db0b956af67",
+      "userId": "demo-user-1",
+      "taskId": "3241b4d419b1b673bd4755d0",
+      "plannedMinutes": 45,
+      "actualMinutes": 42,
+      "startedAt": "2026-01-31T09:00:00Z",
+      "endedAt": "2026-01-31T09:42:00Z",
+      "completed": false,
+      "createdAt": "2026-01-31T09:00:00Z",
+      "updatedAt": "2026-01-31T09:42:00Z"
+    },
+    {
+      "_id": "31a4c4555e1db7e9e779f6be",
+      "userId": "demo-user-1",
+      "taskId": "58d669cbee3772a077021721",
+      "plannedMinutes": 30,
+      "actualMinutes": 15,
+      "startedAt": "2026-02-13T14:00:00Z",
+      "endedAt": "2026-02-13T14:15:00Z",
+      "completed": false,
+      "createdAt": "2026-02-13T14:00:00Z",
+      "updatedAt": "2026-02-13T14:15:00Z"
+    },
+    {
+      "_id": "481fb339258e4d27eb0d1cb7",
+      "userId": "demo-user-1",
+      "taskId": "462ddaed16dc0cf0b9cd7f78",
+      "plannedMinutes": 45,
+      "actualMinutes": 47,
+      "startedAt": "2026-02-08T16:00:00Z",
+      "endedAt": "2026-02-08T16:47:00Z",
+      "completed": false,
+      "createdAt": "2026-02-08T16:00:00Z",
+      "updatedAt": "2026-02-08T16:47:00Z"
+    },
+    {
+      "_id": "0a3a4419f4fe020864d39793",
+      "userId": "demo-user-1",
+      "taskId": "aeee6f529a279764017f2ed6",
+      "plannedMinutes": 25,
+      "actualMinutes": 13,
+      "startedAt": "2026-02-09T15:00:00Z",
+      "endedAt": "2026-02-09T15:13:00Z",
+      "completed": false,
+      "createdAt": "2026-02-09T15:00:00Z",
+      "updatedAt": "2026-02-09T15:13:00Z"
+    },
+    {
+      "_id": "3f0749d0b7d52b20cf1cb80b",
+      "userId": "demo-user-1",
+      "taskId": "9b62179273c8eb5bb682575e",
+      "plannedMinutes": 30,
+      "actualMinutes": 14,
+      "startedAt": "2026-02-07T17:00:00Z",
+      "endedAt": "2026-02-07T17:14:00Z",
+      "completed": false,
+      "createdAt": "2026-02-07T17:00:00Z",
+      "updatedAt": "2026-02-07T17:14:00Z"
+    },
+    {
+      "_id": "a41ba5ef542e196161a9cf81",
+      "userId": "demo-user-1",
+      "taskId": "826a6fce48478dcb74f21345",
+      "plannedMinutes": 45,
+      "actualMinutes": 53,
+      "startedAt": "2026-02-11T08:00:00Z",
+      "endedAt": "2026-02-11T08:53:00Z",
+      "completed": true,
+      "createdAt": "2026-02-11T08:00:00Z",
+      "updatedAt": "2026-02-11T08:53:00Z"
+    },
+    {
+      "_id": "a83bdceca5ffb82d2d59a32a",
+      "userId": "demo-user-1",
+      "taskId": "0275dff6c15c0c8e9df46961",
+      "plannedMinutes": 45,
+      "actualMinutes": 34,
+      "startedAt": "2026-02-01T08:00:00Z",
+      "endedAt": "2026-02-01T08:34:00Z",
+      "completed": false,
+      "createdAt": "2026-02-01T08:00:00Z",
+      "updatedAt": "2026-02-01T08:34:00Z"
+    },
+    {
+      "_id": "5ebe1bd812cb504e1427bbc1",
+      "userId": "demo-user-1",
+      "taskId": "3241b4d419b1b673bd4755d0",
+      "plannedMinutes": 45,
+      "actualMinutes": 58,
+      "startedAt": "2026-02-07T09:00:00Z",
+      "endedAt": "2026-02-07T09:58:00Z",
+      "completed": false,
+      "createdAt": "2026-02-07T09:00:00Z",
+      "updatedAt": "2026-02-07T09:58:00Z"
+    },
+    {
+      "_id": "4205eb64de62343cbda47827",
+      "userId": "demo-user-2",
+      "taskId": "1d076231e171ce761497aa79",
+      "plannedMinutes": 50,
+      "actualMinutes": 52,
+      "startedAt": "2026-02-12T08:00:00Z",
+      "endedAt": "2026-02-12T08:52:00Z",
+      "completed": false,
+      "createdAt": "2026-02-12T08:00:00Z",
+      "updatedAt": "2026-02-12T08:52:00Z"
+    },
+    {
+      "_id": "966c917fc37f20ba4cdb5f20",
+      "userId": "demo-user-2",
+      "taskId": "15a064c2957cac42b13d72ac",
+      "plannedMinutes": 45,
+      "actualMinutes": 28,
+      "startedAt": "2026-02-02T18:00:00Z",
+      "endedAt": "2026-02-02T18:28:00Z",
+      "completed": false,
+      "createdAt": "2026-02-02T18:00:00Z",
+      "updatedAt": "2026-02-02T18:28:00Z"
+    },
+    {
+      "_id": "c9ddc24829264ac29d7172d3",
+      "userId": "demo-user-2",
+      "taskId": "d5c2972284c4cab3209eb834",
+      "plannedMinutes": 25,
+      "actualMinutes": 31,
+      "startedAt": "2026-01-31T18:00:00Z",
+      "endedAt": "2026-01-31T18:31:00Z",
+      "completed": false,
+      "createdAt": "2026-01-31T18:00:00Z",
+      "updatedAt": "2026-01-31T18:31:00Z"
+    },
+    {
+      "_id": "530405fb85b4830ad8282feb",
+      "userId": "demo-user-2",
+      "taskId": "8c2bce779212cccf1052fda3",
+      "plannedMinutes": 25,
+      "actualMinutes": 25,
+      "startedAt": "2026-02-10T08:00:00Z",
+      "endedAt": "2026-02-10T08:25:00Z",
+      "completed": false,
+      "createdAt": "2026-02-10T08:00:00Z",
+      "updatedAt": "2026-02-10T08:25:00Z"
+    },
+    {
+      "_id": "3701071fbc451d7a7da82b31",
+      "userId": "demo-user-2",
+      "taskId": "31645ae36f2e1e4de1e90c80",
+      "plannedMinutes": 50,
+      "actualMinutes": 53,
+      "startedAt": "2026-02-12T14:00:00Z",
+      "endedAt": "2026-02-12T14:53:00Z",
+      "completed": false,
+      "createdAt": "2026-02-12T14:00:00Z",
+      "updatedAt": "2026-02-12T14:53:00Z"
+    },
+    {
+      "_id": "c2e99a2e0b6997ebf6740d07",
+      "userId": "demo-user-2",
+      "taskId": "1d076231e171ce761497aa79",
+      "plannedMinutes": 30,
+      "actualMinutes": 25,
+      "startedAt": "2026-02-02T10:00:00Z",
+      "endedAt": "2026-02-02T10:25:00Z",
+      "completed": false,
+      "createdAt": "2026-02-02T10:00:00Z",
+      "updatedAt": "2026-02-02T10:25:00Z"
+    },
+    {
+      "_id": "0c9367df148217dbe234c21d",
+      "userId": "demo-user-2",
+      "taskId": "15a064c2957cac42b13d72ac",
+      "plannedMinutes": 45,
+      "actualMinutes": 34,
+      "startedAt": "2026-02-14T13:00:00Z",
+      "endedAt": "2026-02-14T13:34:00Z",
+      "completed": false,
+      "createdAt": "2026-02-14T13:00:00Z",
+      "updatedAt": "2026-02-14T13:34:00Z"
+    },
+    {
+      "_id": "8acaae872643435eead3b6e9",
+      "userId": "demo-user-2",
+      "taskId": "2ac09dc275c54898f425d8d9",
+      "plannedMinutes": 30,
+      "actualMinutes": 18,
+      "startedAt": "2026-02-11T14:00:00Z",
+      "endedAt": "2026-02-11T14:18:00Z",
+      "completed": false,
+      "createdAt": "2026-02-11T14:00:00Z",
+      "updatedAt": "2026-02-11T14:18:00Z"
+    },
+    {
+      "_id": "16a427bc19850ce73e343017",
+      "userId": "demo-user-2",
+      "taskId": "8c2bce779212cccf1052fda3",
+      "plannedMinutes": 45,
+      "actualMinutes": 47,
+      "startedAt": "2026-02-02T08:00:00Z",
+      "endedAt": "2026-02-02T08:47:00Z",
+      "completed": true,
+      "createdAt": "2026-02-02T08:00:00Z",
+      "updatedAt": "2026-02-02T08:47:00Z"
+    },
+    {
+      "_id": "282026e42a31e15dcf0cd5b6",
+      "userId": "demo-user-2",
+      "taskId": "1d076231e171ce761497aa79",
+      "plannedMinutes": 30,
+      "actualMinutes": 26,
+      "startedAt": "2026-02-01T12:00:00Z",
+      "endedAt": "2026-02-01T12:26:00Z",
+      "completed": true,
+      "createdAt": "2026-02-01T12:00:00Z",
+      "updatedAt": "2026-02-01T12:26:00Z"
+    },
+    {
+      "_id": "79fdf128c4d670cbffbac850",
+      "userId": "demo-user-2",
+      "taskId": null,
+      "plannedMinutes": 30,
+      "actualMinutes": 28,
+      "startedAt": "2026-02-12T18:00:00Z",
+      "endedAt": "2026-02-12T18:28:00Z",
+      "completed": true,
+      "createdAt": "2026-02-12T18:00:00Z",
+      "updatedAt": "2026-02-12T18:28:00Z"
+    },
+    {
+      "_id": "fb75377817cb557ab0b46f95",
+      "userId": "demo-user-2",
+      "taskId": "fa6bad17408d946a7c7fa8ff",
+      "plannedMinutes": 30,
+      "actualMinutes": 40,
+      "startedAt": "2026-02-14T14:00:00Z",
+      "endedAt": "2026-02-14T14:40:00Z",
+      "completed": true,
+      "createdAt": "2026-02-14T14:00:00Z",
+      "updatedAt": "2026-02-14T14:40:00Z"
+    },
+    {
+      "_id": "0a64a5a10443b2bc3a9a45df",
+      "userId": "demo-user-2",
+      "taskId": "8c2bce779212cccf1052fda3",
+      "plannedMinutes": 25,
+      "actualMinutes": 31,
+      "startedAt": "2026-02-11T18:00:00Z",
+      "endedAt": "2026-02-11T18:31:00Z",
+      "completed": true,
+      "createdAt": "2026-02-11T18:00:00Z",
+      "updatedAt": "2026-02-11T18:31:00Z"
+    },
+    {
+      "_id": "b75c99450c15a73f4a27ba52",
+      "userId": "demo-user-2",
+      "taskId": "2ac09dc275c54898f425d8d9",
+      "plannedMinutes": 45,
+      "actualMinutes": 48,
+      "startedAt": "2026-02-12T10:00:00Z",
+      "endedAt": "2026-02-12T10:48:00Z",
+      "completed": true,
+      "createdAt": "2026-02-12T10:00:00Z",
+      "updatedAt": "2026-02-12T10:48:00Z"
+    },
+    {
+      "_id": "8c7cbbff04e57286455b37da",
+      "userId": "demo-user-3",
+      "taskId": "315f4d38663c6e6a3d13ee4f",
+      "plannedMinutes": 50,
+      "actualMinutes": 40,
+      "startedAt": "2026-02-01T17:00:00Z",
+      "endedAt": "2026-02-01T17:40:00Z",
+      "completed": false,
+      "createdAt": "2026-02-01T17:00:00Z",
+      "updatedAt": "2026-02-01T17:40:00Z"
+    },
+    {
+      "_id": "65d071454141585c0926eff5",
+      "userId": "demo-user-3",
+      "taskId": "543cacd78ca9e44d9a6669b4",
+      "plannedMinutes": 25,
+      "actualMinutes": 35,
+      "startedAt": "2026-02-07T08:00:00Z",
+      "endedAt": "2026-02-07T08:35:00Z",
+      "completed": true,
+      "createdAt": "2026-02-07T08:00:00Z",
+      "updatedAt": "2026-02-07T08:35:00Z"
+    },
+    {
+      "_id": "85ae27cc4306d435f132f40d",
+      "userId": "demo-user-3",
+      "taskId": "55f24ddcdfc016b0a60077b9",
+      "plannedMinutes": 50,
+      "actualMinutes": 35,
+      "startedAt": "2026-02-01T16:00:00Z",
+      "endedAt": "2026-02-01T16:35:00Z",
+      "completed": false,
+      "createdAt": "2026-02-01T16:00:00Z",
+      "updatedAt": "2026-02-01T16:35:00Z"
+    },
+    {
+      "_id": "d7fcb3d48f729d860030c6ad",
+      "userId": "demo-user-3",
+      "taskId": "7a3d7fbc4105ff52fa7a817c",
+      "plannedMinutes": 50,
+      "actualMinutes": 39,
+      "startedAt": "2026-02-09T18:00:00Z",
+      "endedAt": "2026-02-09T18:39:00Z",
+      "completed": false,
+      "createdAt": "2026-02-09T18:00:00Z",
+      "updatedAt": "2026-02-09T18:39:00Z"
+    },
+    {
+      "_id": "db8c6df5bf89bc437e536ca1",
+      "userId": "demo-user-3",
+      "taskId": "4609d384d33933f6686bd951",
+      "plannedMinutes": 25,
+      "actualMinutes": 33,
+      "startedAt": "2026-02-10T14:00:00Z",
+      "endedAt": "2026-02-10T14:33:00Z",
+      "completed": false,
+      "createdAt": "2026-02-10T14:00:00Z",
+      "updatedAt": "2026-02-10T14:33:00Z"
+    },
+    {
+      "_id": "4fd2287b21cc915fe0696175",
+      "userId": "demo-user-3",
+      "taskId": "89e3f12f63c9d1446ade4a52",
+      "plannedMinutes": 50,
+      "actualMinutes": 61,
+      "startedAt": "2026-02-04T18:00:00Z",
+      "endedAt": "2026-02-04T19:01:00Z",
+      "completed": false,
+      "createdAt": "2026-02-04T18:00:00Z",
+      "updatedAt": "2026-02-04T19:01:00Z"
+    },
+    {
+      "_id": "8cbcc60229bb876ec085d329",
+      "userId": "demo-user-3",
+      "taskId": "315f4d38663c6e6a3d13ee4f",
+      "plannedMinutes": 25,
+      "actualMinutes": 15,
+      "startedAt": "2026-02-12T17:00:00Z",
+      "endedAt": "2026-02-12T17:15:00Z",
+      "completed": false,
+      "createdAt": "2026-02-12T17:00:00Z",
+      "updatedAt": "2026-02-12T17:15:00Z"
+    },
+    {
+      "_id": "8ecf7aee0f382c77adb08792",
+      "userId": "demo-user-3",
+      "taskId": "4609d384d33933f6686bd951",
+      "plannedMinutes": 25,
+      "actualMinutes": 36,
+      "startedAt": "2026-02-02T10:00:00Z",
+      "endedAt": "2026-02-02T10:36:00Z",
+      "completed": false,
+      "createdAt": "2026-02-02T10:00:00Z",
+      "updatedAt": "2026-02-02T10:36:00Z"
+    },
+    {
+      "_id": "856f67786767b4332f01fbaf",
+      "userId": "demo-user-3",
+      "taskId": "f422387e98e13519bad33104",
+      "plannedMinutes": 45,
+      "actualMinutes": 65,
+      "startedAt": "2026-02-07T13:00:00Z",
+      "endedAt": "2026-02-07T14:05:00Z",
+      "completed": true,
+      "createdAt": "2026-02-07T13:00:00Z",
+      "updatedAt": "2026-02-07T14:05:00Z"
+    },
+    {
+      "_id": "8c741df1bc5e3ea006c3ab85",
+      "userId": "demo-user-3",
+      "taskId": null,
+      "plannedMinutes": 45,
+      "actualMinutes": 55,
+      "startedAt": "2026-02-07T16:00:00Z",
+      "endedAt": "2026-02-07T16:55:00Z",
+      "completed": false,
+      "createdAt": "2026-02-07T16:00:00Z",
+      "updatedAt": "2026-02-07T16:55:00Z"
+    },
+    {
+      "_id": "fd6dbbc8e547387dc644f05d",
+      "userId": "demo-user-3",
+      "taskId": "7a3d7fbc4105ff52fa7a817c",
+      "plannedMinutes": 45,
+      "actualMinutes": 45,
+      "startedAt": "2026-02-05T13:00:00Z",
+      "endedAt": "2026-02-05T13:45:00Z",
+      "completed": true,
+      "createdAt": "2026-02-05T13:00:00Z",
+      "updatedAt": "2026-02-05T13:45:00Z"
+    },
+    {
+      "_id": "af981c35168f3ea8bb8b0d3b",
+      "userId": "demo-user-3",
+      "taskId": "cce8cfd534153dfe5cb04ff3",
+      "plannedMinutes": 30,
+      "actualMinutes": 41,
+      "startedAt": "2026-01-31T08:00:00Z",
+      "endedAt": "2026-01-31T08:41:00Z",
+      "completed": true,
+      "createdAt": "2026-01-31T08:00:00Z",
+      "updatedAt": "2026-01-31T08:41:00Z"
+    },
+    {
+      "_id": "9bafe2c9e45adc225a7aa98c",
+      "userId": "demo-user-3",
+      "taskId": null,
+      "plannedMinutes": 30,
+      "actualMinutes": 17,
+      "startedAt": "2026-02-06T16:00:00Z",
+      "endedAt": "2026-02-06T16:17:00Z",
+      "completed": false,
+      "createdAt": "2026-02-06T16:00:00Z",
+      "updatedAt": "2026-02-06T16:17:00Z"
+    },
+    {
+      "_id": "ed550478265c332f10c23842",
+      "userId": "demo-user-3",
+      "taskId": "ad4afb65c07746053b1c8113",
+      "plannedMinutes": 50,
+      "actualMinutes": 43,
+      "startedAt": "2026-02-02T13:00:00Z",
+      "endedAt": "2026-02-02T13:43:00Z",
+      "completed": false,
+      "createdAt": "2026-02-02T13:00:00Z",
+      "updatedAt": "2026-02-02T13:43:00Z"
+    }
+  ],
+  "chatHistory": [
+    {
+      "_id": "4ebbe24bca87305fc388e69f",
+      "userId": "demo-user-1",
+      "role": "user",
+      "content": "I’m behind on my report and feeling stressed.",
+      "createdAt": "2026-02-14T12:00:00Z"
+    },
+    {
+      "_id": "6342e5e2ab29955b73647f0b",
+      "userId": "demo-user-1",
+      "role": "assistant",
+      "content": "Let’s triage: what’s due soonest and what’s the minimum viable submission?",
+      "createdAt": "2026-02-14T12:03:00Z"
+    },
+    {
+      "_id": "be4229cfdd24a2eeb454d134",
+      "userId": "demo-user-1",
+      "role": "user",
+      "content": "FYP evaluation and testing section due next week.",
+      "createdAt": "2026-02-14T12:06:00Z"
+    },
+    {
+      "_id": "955a7b92868492545a102186",
+      "userId": "demo-user-1",
+      "role": "assistant",
+      "content": "Okay—let’s create 3 focused blocks: test plan, metrics, then write-up. Want 25 or 50-minute sprints?",
+      "createdAt": "2026-02-14T12:09:00Z"
+    },
+    {
+      "_id": "d0f99f7c9e215edfe6a4aabc",
+      "userId": "demo-user-1",
+      "role": "user",
+      "content": "25 minutes.",
+      "createdAt": "2026-02-14T12:12:00Z"
+    },
+    {
+      "_id": "4b3a7e38e74319cd75aa65fe",
+      "userId": "demo-user-1",
+      "role": "assistant",
+      "content": "Great. Start with the test plan: list 5 core scenarios and expected results.",
+      "createdAt": "2026-02-14T12:15:00Z"
+    },
+    {
+      "_id": "f9f02ce76b119ff903d48bcb",
+      "userId": "demo-user-1",
+      "role": "user",
+      "content": "Also I keep procrastinating.",
+      "createdAt": "2026-02-14T12:18:00Z"
+    },
+    {
+      "_id": "1c16b92ce8343cbab46c1114",
+      "userId": "demo-user-1",
+      "role": "assistant",
+      "content": "Shrink it: open the document and write just the heading + 3 bullet points. Two minutes. Go.",
+      "createdAt": "2026-02-14T12:21:00Z"
+    },
+    {
+      "_id": "afe44aa5c9af9f0ba3d90f87",
+      "userId": "demo-user-1",
+      "role": "user",
+      "content": "I’m behind on my report and feeling stressed.",
+      "createdAt": "2026-02-14T12:24:00Z"
+    },
+    {
+      "_id": "1f5c471360ead4d6df146afc",
+      "userId": "demo-user-1",
+      "role": "assistant",
+      "content": "Let’s triage: what’s due soonest and what’s the minimum viable submission?",
+      "createdAt": "2026-02-14T12:27:00Z"
+    },
+    {
+      "_id": "a5eab8f67897996fafb893cc",
+      "userId": "demo-user-1",
+      "role": "user",
+      "content": "FYP evaluation and testing section due next week.",
+      "createdAt": "2026-02-14T12:30:00Z"
+    },
+    {
+      "_id": "b49192be8f6688437717713d",
+      "userId": "demo-user-1",
+      "role": "assistant",
+      "content": "Okay—let’s create 3 focused blocks: test plan, metrics, then write-up. Want 25 or 50-minute sprints?",
+      "createdAt": "2026-02-14T12:33:00Z"
+    },
+    {
+      "_id": "af3405dff69a912715d51cf5",
+      "userId": "demo-user-1",
+      "role": "user",
+      "content": "25 minutes.",
+      "createdAt": "2026-02-14T12:36:00Z"
+    },
+    {
+      "_id": "91093a9ef4e863a5e850a965",
+      "userId": "demo-user-1",
+      "role": "assistant",
+      "content": "Great. Start with the test plan: list 5 core scenarios and expected results.",
+      "createdAt": "2026-02-14T12:39:00Z"
+    },
+    {
+      "_id": "cda2c354fa708c7e8a908b71",
+      "userId": "demo-user-1",
+      "role": "user",
+      "content": "Also I keep procrastinating.",
+      "createdAt": "2026-02-14T12:42:00Z"
+    },
+    {
+      "_id": "3e95c939b774f4ebdf672eb2",
+      "userId": "demo-user-1",
+      "role": "assistant",
+      "content": "Shrink it: open the document and write just the heading + 3 bullet points. Two minutes. Go.",
+      "createdAt": "2026-02-14T12:45:00Z"
+    },
+    {
+      "_id": "ae08672b8301ced5dfcbc3f7",
+      "userId": "demo-user-2",
+      "role": "user",
+      "content": "I’m behind on my report and feeling stressed.",
+      "createdAt": "2026-02-14T12:00:00Z"
+    },
+    {
+      "_id": "5e2190a832a5c522af0d5d51",
+      "userId": "demo-user-2",
+      "role": "assistant",
+      "content": "Let’s triage: what’s due soonest and what’s the minimum viable submission?",
+      "createdAt": "2026-02-14T12:03:00Z"
+    },
+    {
+      "_id": "3a66d899731cf41b0d29f630",
+      "userId": "demo-user-2",
+      "role": "user",
+      "content": "FYP evaluation and testing section due next week.",
+      "createdAt": "2026-02-14T12:06:00Z"
+    },
+    {
+      "_id": "6592f39cff82c5bcb5e18ee8",
+      "userId": "demo-user-2",
+      "role": "assistant",
+      "content": "Okay—let’s create 3 focused blocks: test plan, metrics, then write-up. Want 25 or 50-minute sprints?",
+      "createdAt": "2026-02-14T12:09:00Z"
+    },
+    {
+      "_id": "781432bd71cdf7f92c143e55",
+      "userId": "demo-user-2",
+      "role": "user",
+      "content": "25 minutes.",
+      "createdAt": "2026-02-14T12:12:00Z"
+    },
+    {
+      "_id": "6641d2d648a22cca8e0d3d44",
+      "userId": "demo-user-2",
+      "role": "assistant",
+      "content": "Great. Start with the test plan: list 5 core scenarios and expected results.",
+      "createdAt": "2026-02-14T12:15:00Z"
+    },
+    {
+      "_id": "3339bd8cff158c4c1ca71f8b",
+      "userId": "demo-user-2",
+      "role": "user",
+      "content": "Also I keep procrastinating.",
+      "createdAt": "2026-02-14T12:18:00Z"
+    },
+    {
+      "_id": "0a998f3749ea8d26e6dfb152",
+      "userId": "demo-user-2",
+      "role": "assistant",
+      "content": "Shrink it: open the document and write just the heading + 3 bullet points. Two minutes. Go.",
+      "createdAt": "2026-02-14T12:21:00Z"
+    },
+    {
+      "_id": "9c40566171e1b68bec307bfe",
+      "userId": "demo-user-2",
+      "role": "user",
+      "content": "I’m behind on my report and feeling stressed.",
+      "createdAt": "2026-02-14T12:24:00Z"
+    },
+    {
+      "_id": "5fbb58290c1567768d00f450",
+      "userId": "demo-user-2",
+      "role": "assistant",
+      "content": "Let’s triage: what’s due soonest and what’s the minimum viable submission?",
+      "createdAt": "2026-02-14T12:27:00Z"
+    },
+    {
+      "_id": "c9779e44501bafe8e45ed9bf",
+      "userId": "demo-user-3",
+      "role": "user",
+      "content": "I’m behind on my report and feeling stressed.",
+      "createdAt": "2026-02-14T12:00:00Z"
+    },
+    {
+      "_id": "72e9bd849004b9f0ff90d970",
+      "userId": "demo-user-3",
+      "role": "assistant",
+      "content": "Let’s triage: what’s due soonest and what’s the minimum viable submission?",
+      "createdAt": "2026-02-14T12:03:00Z"
+    },
+    {
+      "_id": "b6ddc75cc782d7898d625493",
+      "userId": "demo-user-3",
+      "role": "user",
+      "content": "FYP evaluation and testing section due next week.",
+      "createdAt": "2026-02-14T12:06:00Z"
+    },
+    {
+      "_id": "ee8f6a041053984e07240f6a",
+      "userId": "demo-user-3",
+      "role": "assistant",
+      "content": "Okay—let’s create 3 focused blocks: test plan, metrics, then write-up. Want 25 or 50-minute sprints?",
+      "createdAt": "2026-02-14T12:09:00Z"
+    },
+    {
+      "_id": "d9fbe1a2418c2f568c037ce7",
+      "userId": "demo-user-3",
+      "role": "user",
+      "content": "25 minutes.",
+      "createdAt": "2026-02-14T12:12:00Z"
+    },
+    {
+      "_id": "16e36fc9a5138f96b1637da0",
+      "userId": "demo-user-3",
+      "role": "assistant",
+      "content": "Great. Start with the test plan: list 5 core scenarios and expected results.",
+      "createdAt": "2026-02-14T12:15:00Z"
+    },
+    {
+      "_id": "583c701f4b275f2a11b434f7",
+      "userId": "demo-user-3",
+      "role": "user",
+      "content": "Also I keep procrastinating.",
+      "createdAt": "2026-02-14T12:18:00Z"
+    },
+    {
+      "_id": "abe60cb481fe9f65bae8524e",
+      "userId": "demo-user-3",
+      "role": "assistant",
+      "content": "Shrink it: open the document and write just the heading + 3 bullet points. Two minutes. Go.",
+      "createdAt": "2026-02-14T12:21:00Z"
+    },
+    {
+      "_id": "98be0c50b7a2c6f49ada3321",
+      "userId": "demo-user-3",
+      "role": "user",
+      "content": "I’m behind on my report and feeling stressed.",
+      "createdAt": "2026-02-14T12:24:00Z"
+    },
+    {
+      "_id": "45163f631cf81b7206f2e1bd",
+      "userId": "demo-user-3",
+      "role": "assistant",
+      "content": "Let’s triage: what’s due soonest and what’s the minimum viable submission?",
+      "createdAt": "2026-02-14T12:27:00Z"
+    }
+  ],
+  "knowledgeBaseSeeds": [
+    {
+      "source": "study_methods.md",
+      "title": "Study Methods Cheatsheet",
+      "text": "Pomodoro: 25 min focus + 5 min break; after 4 rounds, take a 15–30 min break.\n80/20: starting is the hardest part—reduce friction with a 2-minute starter step.\nTime-blocking: pick 1–3 MITs (Most Important Tasks) per day and schedule them.\nActive recall + spaced repetition beats rereading; use quick self-tests.\nIf stuck: write an outline with headings, then fill sections in short passes."
+    },
+    {
+      "source": "fyp_writing.md",
+      "title": "FYP Writing Guidance",
+      "text": "Evaluation: define metrics (task completion rate, perceived usefulness, SUS score).\nTesting: include unit tests, API tests (Postman), and usability testing with questionnaires.\nWrite-up structure: intro, design, implementation, testing, evaluation, conclusion.\nAlways link features to requirements and evidence (screenshots, logs, user feedback)."
+    }
+  ]
+}
