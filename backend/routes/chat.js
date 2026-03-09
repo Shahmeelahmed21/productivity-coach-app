@@ -10,6 +10,7 @@ const Task = require("../models/task");
 const MoodEntry = require("../models/MoodEntry");
 
 const { ollamaChat } = require("../lib/ollamaClient");
+const chatIntents = require("../lib/chatIntents");
 const { retrieveTopK } = require("../lib/retriever");
 const { generateDailyPlan } = require("../lib/planner");
 const { createSubtasks } = require("../lib/tools");
@@ -120,55 +121,19 @@ function formatAbsoluteDateLabel(dateISO, prefs) {
 // Intent detection
 // -----------------------------
 function isPlanIntent(text) {
-  const m = String(text || "").toLowerCase().trim();
-
-  if (
-    m.includes("plan my day") ||
-    m.includes("schedule my day") ||
-    m.includes("make me a plan") ||
-    m.includes("time block") ||
-    m.includes("timeblock") ||
-    m === "plan"
-  ) return true;
-
-  if (/^(plan|schedule)\b/.test(m)) return true;
-
-  if (
-    /\bplan\b/.test(m) &&
-    /\b(today|tomorrow|tonight|next|this|on|by|before|after)\b/.test(m)
-  ) return true;
-
-  return false;
+  return chatIntents.isPlanIntent(text);
 }
 
 function isTaskCreateIntent(text) {
-  const m = String(text || "").toLowerCase().trim();
-
-  // "create/add/make/set up a task ..."
-  if (/\b(create|add|make|setup|set up|set)\b.*\b(task|tasks|todo|to-do)\b/.test(m))
-    return true;
-
-  // "remind me to finish chapter 4 tomorrow"
-  if (/^remind me to\b/.test(m)) return true;
-
-  return false;
+  return chatIntents.isTaskCreateIntent(text);
 }
 
 function isMicroStepIntent(text) {
-  const m = String(text || "").toLowerCase();
-  return (
-    m.includes("2 minute") ||
-    m.includes("2-minute") ||
-    m.includes("first step") ||
-    m.includes("next step") ||
-    m.includes("break down") ||
-    m.includes("breakdown") ||
-    m.includes("break it down") ||
-    m.includes("tasks further")
-  );
+  return chatIntents.isMicroStepIntent(text);
 }
 
 function isSubtaskCreateIntent(text) {
+  return chatIntents.isSubtaskCreateIntent(text);
   const m = String(text || "").toLowerCase();
 
   // Action verbs that signal creation
@@ -209,6 +174,7 @@ function isSubtaskCreateIntent(text) {
 }
 
 function isStartFocusIntent(text) {
+  return chatIntents.isStartFocusIntent(text);
   const m = String(text || "").toLowerCase().trim();
 
   if (m.includes("pomodoro")) return true;
@@ -253,14 +219,7 @@ function extractTaskTitleFromCreateIntent(text, prefs) {
   let t = String(text || "").trim();
   if (!t) return "";
 
-  t = t
-    .replace(/^(please\s+)?(can you|could you|would you)\s+/i, "")
-    .replace(
-      /^(create|add|make|setup|set up|set|formalise)\s+(me\s+)?(an?\s+)?(new\s+)?(task|tasks|todo|to-do)\s*(to|for)?\s*/i,
-      ""
-    )
-    .replace(/^remind me to\s*/i, "")
-    .trim();
+  t = chatIntents.stripTaskCreateLead(t).replace(/^remind me to\s*/i, "").trim();
 
   if (!t) return "";
 
@@ -416,9 +375,27 @@ function microStepReply({ taskTitle, moodNow, hasTasks, topTaskTitles }) {
 }
 
 function safeJsonParse(s) {
+  const raw = String(s || "").trim();
+  if (!raw) return null;
+
   try {
-    return JSON.parse(String(s || ""));
+    return JSON.parse(raw);
   } catch {
+    const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)```/i);
+    if (fenced?.[1]) {
+      try {
+        return JSON.parse(fenced[1].trim());
+      } catch {}
+    }
+
+    const firstBrace = raw.indexOf("{");
+    const lastBrace = raw.lastIndexOf("}");
+    if (firstBrace >= 0 && lastBrace > firstBrace) {
+      try {
+        return JSON.parse(raw.slice(firstBrace, lastBrace + 1));
+      } catch {}
+    }
+
     return null;
   }
 }
@@ -531,6 +508,7 @@ Rules:
     ],
     {
       format: schema,
+      schemaName: "create_subtasks",
       numPredict: 700,
       temperature: 0.2,
       topP: 0.9,

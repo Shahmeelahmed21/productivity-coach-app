@@ -1,35 +1,57 @@
 // backend/lib/ollamaClient.js
-const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || "http://localhost:11434";
-const CHAT_MODEL = process.env.OLLAMA_CHAT_MODEL || "qwen2.5:7b-instruct";
-const EMBED_MODEL = process.env.OLLAMA_EMBED_MODEL || "all-minilm";
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY || "";
+const OPENAI_CHAT_MODEL = process.env.OPENAI_CHAT_MODEL || "gpt-5-mini";
+const OPENAI_EMBED_MODEL =
+  process.env.OPENAI_EMBED_MODEL || "text-embedding-3-small";
 
-async function ollamaChat(messages, opts = {}) {
-  const {
-    numPredict = 220,
-    temperature = 0.35,
-    topP = 0.9,
-    keepAlive = "10m",
-    numCtx,
-    format, // ✅ NEW: "json" or JSON schema object
-  } = opts;
+if (!OPENAI_API_KEY) {
+  throw new Error("Missing OPENAI_API_KEY in backend environment");
+}
 
+function buildChatRequestBody(messages, opts = {}) {
   const body = {
-    model: CHAT_MODEL,
+    model: OPENAI_CHAT_MODEL,
     messages,
-    stream: false,
-    keep_alive: keepAlive,
-    options: {
-      num_predict: numPredict,
-      temperature,
-      top_p: topP,
-      ...(Number.isFinite(numCtx) ? { num_ctx: numCtx } : {}),
-    },
-    ...(format ? { format } : {}), // ✅ NEW
   };
 
-  const r = await fetch(`${OLLAMA_BASE_URL}/api/chat`, {
+  if (opts.format === "json") {
+    body.response_format = { type: "json_object" };
+  } else if (opts.format && typeof opts.format === "object") {
+    body.response_format = {
+      type: "json_schema",
+      json_schema: {
+        name: String(opts.schemaName || "structured_output"),
+        schema: opts.format,
+        strict: true,
+      },
+    };
+  }
+
+  return body;
+}
+
+function extractChatText(data) {
+  const content = data?.choices?.[0]?.message?.content;
+
+  if (typeof content === "string") return content;
+  if (!Array.isArray(content)) return "";
+
+  return content
+    .map((part) => {
+      if (typeof part === "string") return part;
+      if (part?.type === "text" && typeof part.text === "string") return part.text;
+      return "";
+    })
+    .join("");
+}
+
+async function requestChatCompletion(body) {
+  const r = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${OPENAI_API_KEY}`,
+    },
     body: JSON.stringify(body),
   });
 
@@ -41,16 +63,49 @@ async function ollamaChat(messages, opts = {}) {
     data = { error: raw };
   }
 
-  if (!r.ok) throw new Error(data?.error || `Ollama chat failed (${r.status})`);
-  return data?.message?.content || "";
+  if (!r.ok) {
+    throw new Error(
+      data?.error?.message || data?.error || `OpenAI chat failed (${r.status})`
+    );
+  }
+
+  return data;
+}
+
+function shouldRetryAsJsonObject(err) {
+  const message = String(err?.message || "").toLowerCase();
+  return (
+    message.includes("json_schema") ||
+    message.includes("response_format") ||
+    message.includes("not supported")
+  );
+}
+
+async function ollamaChat(messages, opts = {}) {
+  try {
+    const data = await requestChatCompletion(buildChatRequestBody(messages, opts));
+    return extractChatText(data);
+  } catch (err) {
+    if (!(opts.format && typeof opts.format === "object" && shouldRetryAsJsonObject(err))) {
+      throw err;
+    }
+
+    const fallbackData = await requestChatCompletion(
+      buildChatRequestBody(messages, { ...opts, format: "json" })
+    );
+    return extractChatText(fallbackData);
+  }
 }
 
 async function ollamaEmbed(text) {
-  const r = await fetch(`${OLLAMA_BASE_URL}/api/embed`, {
+  const r = await fetch("https://api.openai.com/v1/embeddings", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${OPENAI_API_KEY}`,
+    },
     body: JSON.stringify({
-      model: EMBED_MODEL,
+      model: OPENAI_EMBED_MODEL,
       input: text,
     }),
   });
@@ -63,12 +118,19 @@ async function ollamaEmbed(text) {
     data = { error: raw };
   }
 
-  if (!r.ok) throw new Error(data?.error || `Ollama embed failed (${r.status})`);
+  if (!r.ok) {
+    throw new Error(
+      data?.error?.message || data?.error || `OpenAI embed failed (${r.status})`
+    );
+  }
 
-  const vec = data?.embeddings?.[0];
-  if (!Array.isArray(vec)) throw new Error("No embedding returned from Ollama");
+  const vec = data?.data?.[0]?.embedding;
+  if (!Array.isArray(vec)) {
+    throw new Error("No embedding returned from OpenAI");
+  }
+
   return vec;
 }
 
-module.exports = { ollamaChat, ollamaEmbed };
+module.exports = { buildChatRequestBody, ollamaChat, ollamaEmbed };
 
